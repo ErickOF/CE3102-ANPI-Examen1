@@ -48,6 +48,7 @@ function x = thomasAlgorithm(matrix, d)
       qi(end + 1) = (d(i) - qi(end) * ai) / (bi - pi(i - 1)*ai);
     endif
   endfor
+  % This line is wrong. I didn't have time to finish
   x = qi - pi;
 endfunction
 
